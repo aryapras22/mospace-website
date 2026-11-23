@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -24,41 +30,48 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="site-header">
-          <div className="container header-inner">
-            <Link href="/" className="brand">
+        <header>
+          <nav className="nav-pill" aria-label="Primary navigation">
+            <Link href="/" className="nav-pill__brand">
               <Image
                 src="/mospace-icon.png"
                 alt=""
-                width={28}
-                height={28}
-                className="brand-icon"
+                width={24}
+                height={24}
+                priority
+                className="nav-pill__icon"
               />
               <span>Mospace</span>
             </Link>
-            <nav className="nav" aria-label="Main navigation">
-              <Link href="/">Home</Link>
-              <Link href="/privacy">Privacy</Link>
-              <Link href="/support">Support</Link>
-            </nav>
-          </div>
+            <ul className="nav-pill__links">
+              <li>
+                <Link href="/" className="nav-pill__link">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="nav-pill__link">
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link href="/support" className="nav-pill__link">
+                  Support
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </header>
 
-        <main className="main">
-          <div className="container">{children}</div>
-        </main>
+        <main className="site-main">{children}</main>
 
-        <footer className="site-footer">
-          <div className="container footer-inner">
-            <nav className="footer-links" aria-label="Footer navigation">
-              <Link href="/">Home</Link>
-              <Link href="/privacy">Privacy</Link>
-              <Link href="/support">Support</Link>
-            </nav>
-            <div className="footer-meta">
-              <span>© 2026 Wiraprasoneva Devs</span>
-              <a href="mailto:arya.pras17@gmail.com">arya.pras17@gmail.com</a>
-            </div>
+        <footer className="foot-stmt">
+          <p className="foot-stmt__line">Your floor plans stay on your Mac.</p>
+          <div className="foot-stmt__meta">
+            <span>© 2026 Wiraprasoneva Devs</span>
+            <a href="mailto:arya.pras17@gmail.com" className="foot-stmt__email">
+              arya.pras17@gmail.com
+            </a>
           </div>
         </footer>
       </body>
