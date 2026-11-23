@@ -56,7 +56,7 @@ export default function RootLayout({
               <Link href="/support">Support</Link>
             </nav>
             <div className="footer-meta">
-              <span>© 2026 Arya</span>
+              <span>© 2026 Wiraprasoneva Devs</span>
               <a href="mailto:arya.pras17@gmail.com">arya.pras17@gmail.com</a>
             </div>
           </div>
