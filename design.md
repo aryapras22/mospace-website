@@ -8,7 +8,7 @@ Atmospheric. Dark navy canvas with two fixed radial glows (blue top left, warm o
 
 ## Macrostructure family
 
-- Marketing (`/`): 19 Map / Diagram. One hand-built SVG floor plan organises the page. Five numbered zones on the plan (Import, Edit, Visitors, Simulate, Analyze) each link to a short note below or beside the map. Heat-coloured crowd spots on the plan use the heat tokens. One outlined CTA below the map, linking to support.
+- Marketing (`/`): 19 Map / Diagram. One hand-built SVG floor plan organises the page. Five numbered zones on the plan (Import, Edit, Visitors, Simulate, Analyze) each link to a short note below or beside the map. Heat-coloured crowd spots on the plan use the heat tokens. The map is followed by a "See it in the app" section of real screenshots in zone order. One outlined CTA below the map, linking to support.
 - Content (`/privacy`, `/support`): 02 Long Document. A single readable column, inline section heads, no cards. Support uses question-as-heading blocks in the same column.
 
 ## Theme
@@ -69,4 +69,4 @@ The app icon (`public/mospace-icon.png`), the canvas glows, the type stacks, the
 
 ## Content rules
 
-macOS only, requires macOS 27. Never mention iPhone, iPad, iOS, Apple Watch or watchOS. Developer is Wiraprasoneva Devs. Contact email arya.pras17@gmail.com. Features limited to what the app does: import a PDF legend and PDF floor plan, edit the layout, set visitors, run a 3D crowd simulation, analyse and compare layouts. All data stays on the user's Mac. No invented numbers, testimonials, screenshots or prices. No em dashes.
+macOS only, requires macOS 27. Never mention iPhone, iPad, iOS, Apple Watch or watchOS. Developer is Wiraprasoneva Devs. Contact email arya.pras17@gmail.com. Features limited to what the app does: import a PDF legend and PDF floor plan, edit the layout, set visitors, run a 3D crowd simulation, analyse and compare layouts. All data stays on the user's Mac. No invented numbers, testimonials, fake screenshots or prices. Real screenshots of the app may appear in a figure with a hairline rule border; never draw fake window chrome around them. No em dashes.

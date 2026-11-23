@@ -610,6 +610,88 @@ svg {
   margin-block-start: var(--space-2xs);
 }
 
+/* See it in the app screenshot steps */
+
+.app-screens {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md);
+  padding-block-start: var(--space-lg);
+}
+
+.app-screens__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--text-2xl);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.app-screens__list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-xl);
+}
+
+.app-step {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-sm);
+  align-items: start;
+  min-width: 0;
+}
+
+.app-step__caption {
+  display: grid;
+  gap: var(--space-2xs);
+  min-width: 0;
+}
+
+.app-step__head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+}
+
+.app-step__num {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.app-step__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--text-lg);
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.app-step__body {
+  color: var(--color-ink);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  max-width: var(--measure);
+}
+
+.app-step__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius-card);
+}
+
 /* Map page footer CTA and requirement line */
 
 .map-actions {
@@ -898,6 +980,17 @@ svg {
 
   .foot-stmt {
     padding-block: var(--space-2xl) var(--space-xl);
+  }
+}
+
+@media (min-width: 48rem) {
+  .app-screens__list {
+    gap: var(--space-2xl);
+  }
+
+  .app-step {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: var(--space-lg);
   }
 }
 
