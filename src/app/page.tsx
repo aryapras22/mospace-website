@@ -5,7 +5,7 @@ import FloorPlanMap from "./FloorPlanMap";
 export const metadata: Metadata = {
   title: "Mospace for macOS",
   description:
-    "Import your venue legend and layout, edit booths and rooms, run 3D crowd simulations, and compare layouts locally on macOS 27.",
+    "Plan. Simulate. Understand. Mospace is a macOS app for planning bazaar and market events.",
 };
 
 export default function HomePage() {
@@ -13,10 +13,10 @@ export default function HomePage() {
     <div className="map-page">
       <section className="map-intro" aria-labelledby="home-title">
         <h1 id="home-title" className="map-intro__title">
-          From floor plan to crowd map.
+          Plan. Simulate. Understand.
         </h1>
         <p className="map-intro__lead">
-          Import your venue legend and layout, edit booths and spaces, run 3D crowd simulations, and compare layouts locally on your Mac.
+          Mospace is a macOS app for planning bazaar and market events. You bring the floor plans of your venue, and the app helps you review each layout, describe who will visit, compare the layouts against each other, and watch one of them run in 3D before anything is built.
         </p>
       </section>
 

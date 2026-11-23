@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Mospace",
   },
   description:
-    "Mospace is a macOS app for planning bazaar layouts and running 3D crowd simulations on your Mac.",
+    "Mospace is a macOS app for planning bazaar and market events.",
   icons: {
     icon: "/mospace-icon.png",
     apple: "/mospace-icon.png",
