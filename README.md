@@ -1,6 +1,6 @@
 # Mospace website
 
-Static marketing, privacy policy, and support site for Mospace, exported for GitHub Pages at `https://aryapras22.github.io/mospace-website/`.
+Static marketing, privacy policy, and support site for Mospace, exported as static files and hosted on Vercel at `https://mospace.caffeine-junkie.xyz/`.
 
 ## Development
 
@@ -21,4 +21,4 @@ npm run build
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml`, builds the static export into `./out`, and deploys it to GitHub Pages.
+Vercel builds and deploys every push to `main`.

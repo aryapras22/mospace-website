@@ -46,7 +46,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-top">
           <Image
-            src="/mospace-website/mospace-icon.png"
+            src="/mospace-icon.png"
             alt="Mospace app icon"
             width={88}
             height={88}

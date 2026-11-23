@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   description:
     "Mospace is a macOS app for planning bazaar layouts and running 3D crowd simulations on your Mac.",
   icons: {
-    icon: "/mospace-website/mospace-icon.png",
-    apple: "/mospace-website/mospace-icon.png",
+    icon: "/mospace-icon.png",
+    apple: "/mospace-icon.png",
   },
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
           <div className="container header-inner">
             <Link href="/" className="brand">
               <Image
-                src="/mospace-website/mospace-icon.png"
+                src="/mospace-icon.png"
                 alt=""
                 width={28}
                 height={28}
